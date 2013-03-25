@@ -36,20 +36,24 @@ describe "#my_uniq" do
 end
 
 describe "#two_sum" do
-  let(:arr) { [1,2,0,0,0,-2,3,-3,4] }  
-
-  before { let(:arr) { [1,2,0,0,0,-2,3,-3,4] } }
 
   it "returns true for 1 pair" do
+    [1,3,2,4,-1].two_sum.should == true
   end
 
   it "does not return true for only 1 zero" do
+    [1,0,1].two_sum.should == false
   end
 
   it "returns false for 0 pairs" do
+    [1,4,3].two_sum.should be_false
   end
 
   it "does not change the original array" do
+    a = [1,-1,4]
+    b = a.dup
+    a.two_sum
+    a.should == b
   end
 
 end
