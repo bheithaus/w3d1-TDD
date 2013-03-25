@@ -10,7 +10,6 @@
 #
 
 class TOH
-
   attr_reader :piles
 
   def initialize(piles = [[3, 2, 1], [], []])
@@ -32,6 +31,12 @@ class TOH
     end
   end
 
+  def win?
+    if !@piles[0].empty? || @piles.select { |p| p.size > 0 }.length > 1
+      return false
+    end
+    pile = @piles.select { |p| p.size > 0 }.flatten
 
-
+    pile == pile.sort.reverse
+  end
 end
