@@ -11,8 +11,25 @@
 
 class TOH
 
+  attr_reader :piles
+
   def initialize(piles = [[3, 2, 1], [], []])
     @piles = piles
+  end
+
+  def move_disc(from, to)
+    raise "illegal move" unless valid_move?(from, to)
+    @piles[to].push(@piles[from].pop)
+  end
+
+  def valid_move?(from, to)
+    if @piles[from].empty?
+      return false
+    elsif @piles[to].empty?
+      return true
+    else
+      @piles[from][-1] < @piles[to][-1]
+    end
   end
 
 
