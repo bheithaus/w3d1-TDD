@@ -22,13 +22,8 @@ class TOH
   end
 
   def valid_move?(from, to)
-    if @piles[from].empty?
-      return false
-    elsif @piles[to].empty?
-      return true
-    else
-      @piles[from][-1] < @piles[to][-1]
-    end
+    return false if @piles[from].empty?
+    @piles[to].empty? || @piles[from][-1] < @piles[to][-1]
   end
 
   def win?
