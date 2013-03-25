@@ -35,8 +35,24 @@ describe "#my_uniq" do
   end
 end
 
+describe "#two_sum" do
+  let(:arr) { [1,2,0,0,0,-2,3,-3,4] }  
 
+  before { let(:arr) { [1,2,0,0,0,-2,3,-3,4] } }
 
+  it "returns true for 1 pair" do
+  end
+
+  it "does not return true for only 1 zero" do
+  end
+
+  it "returns false for 0 pairs" do
+  end
+
+  it "does not change the original array" do
+  end
+
+end
 
 
 # describe "#factors" do
