@@ -6,4 +6,10 @@ class Array
     uniq
   end
 
+  def two_sum
+    return true if self.count(0) > 1
+    self.any? { |item| self.include?(-item) unless item == 0 }
+  end
+
+
 end
