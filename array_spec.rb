@@ -29,10 +29,7 @@ describe "#my_uniq" do
 
     arr.should == original
   end
-  ## QUESTION.
-  it "extends class Array" do
-    pending
-  end
+
 end
 
 describe "#two_sum" do
