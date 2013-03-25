@@ -20,14 +20,16 @@ describe "#my_uniq" do
   let(:arr) { [5,2,7,5,3,4,3] }
 
   it "returns a subarray with all the uniq items" do
-    pending
+    arr.my_uniq.should == [5,2,7,3,4]
   end
 
   it "leaves original array intact" do
-    pending
+    original = arr.dup
+    arr.my_uniq
 
+    arr.should == original
   end
-
+  ## QUESTION.
   it "extends class Array" do
     pending
   end
