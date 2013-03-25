@@ -8,3 +8,13 @@
 #
 # After each move, check to see if they have succeeded in moving all the discs, to the final pile. If so, they win!
 #
+
+class TOH
+
+  def initialize(piles = [[3, 2, 1], [], []])
+    @piles = piles
+  end
+
+
+
+end
