@@ -17,7 +17,7 @@ require './array_work'
 # This is also called monkey patching, and it is often frowned upon to, after-the-fact, add new methods to a class. However, it is occasionally useful and interesting to try out.
 
 describe "#my_uniq" do
-  let(:arr) { [5,2,7,5,3,4,3] }
+  let(:arr) { [5,2,7,5,3,4,3] } #nice use of let
 
   it "returns a subarray with all the uniq items" do
     arr.my_uniq.should == [5,2,7,3,4]
