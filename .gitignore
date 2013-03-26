@@ -1,3 +1,5 @@
 #
-# REV: I would reccomend that you make a .gitignore file to avoid pushing the DS_store file.
+# REV: I would reccomend that you make a .gitignore file to avoid pushing the .DS_Store file.
 #
+
+.DS_Store
