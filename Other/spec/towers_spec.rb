@@ -76,3 +76,8 @@ describe "Towers of Hanoi" do
     end
   end
 end
+
+#
+# REV: Another great example. Confirming that the final tower is in order is unnecessary concidering
+#      your move validation won't allow them to ever be placed out of order but it's a thorough RSpec.
+#      
