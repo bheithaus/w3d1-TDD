@@ -67,3 +67,7 @@ end
 #     factors(13).should == [1, 13]
 #   end
 # end
+
+##
+## REV: Great work! It's very easy to read, runs perfectly in Rspec and was very helpful for me to see.
+##
