@@ -1,8 +1,8 @@
 require 'rspec'
 require './towers.rb'
-
+#very thoru tests
 describe "Towers of Hanoi" do
-  subject(:game) {TOH.new}
+  subject(:game) {TOH.new} #great use of subject
 
   describe "initialize towers game" do
     it "creates three array pile" do
